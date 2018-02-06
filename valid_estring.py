@@ -12,15 +12,18 @@ def isValid(s):
         
     freq = list(char_freq.values())
     freq_set = set(freq)
+    freq_min = min(freq)
+    freq_max = max(freq)
   
+
     #print(unique_chars)
     #print(char_freq)
     #print(freq)
+   
     
-    
-    if min(freq)==max(freq) :
+    if freq_min == freq_max :
         return "YES"
-    elif (max(freq) - 1) == (min(freq)) and freq.count(max(freq)) == 1 and len(freq_set) <= 2:
+    elif (freq_max - 1) == (freq_min) and freq.count(freq_max) == 1 and len(freq_set) <= 2:
         return "YES"
     
     elif len(freq_set) == 2 and min(freq_set) == 1:
