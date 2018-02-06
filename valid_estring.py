@@ -5,7 +5,7 @@ import sys
 
 def isValid(s):
     # Complete this function
-    unique_chars = list(set(s))
+    unique_chars = set(s)
     char_freq = {}
     for char in unique_chars:
         char_freq[char] = s.count(char)
