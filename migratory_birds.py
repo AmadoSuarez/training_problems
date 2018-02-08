@@ -1,5 +1,5 @@
 #!/bin/python3
-
+#https://www.hackerrank.com/challenges/migratory-birds/problem
 import sys
 from collections import Counter
 def migratoryBirds(n, ar):
