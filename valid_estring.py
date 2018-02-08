@@ -1,5 +1,5 @@
 #!/bin/python3
-
+#https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem
 import sys
 
 
