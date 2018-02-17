@@ -1,14 +1,12 @@
 #!/bin/python3
 #https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem
 import sys
-
+from collections import Counter
 
 def isValid(s):
     # Complete this function
     unique_chars = set(s)
-    char_freq = {}
-    for char in unique_chars:
-        char_freq[char] = s.count(char)
+    char_freq = Counter(s)
         
     freq = list(char_freq.values())
     freq_set = set(freq)
